@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        tspan{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <svg width="250", height="260">
+        <polygon points="125,30 230,230 20,230", style="fill:#feff5b; stroke:black; stroke-width:3"></polygon>
+        <text x="30" y="30">
+            <tspan x="88" y="250">Triangle</tspan>
+        </text>
+    </svg>
+    <svg width="250", height="260">
+        <rect x="25" y="30" style="width:200px; height:200px; fill:#74c3d7; stroke:black; stroke-width:3"></rect>
+        <text x="30" y="30">
+            <tspan x="70" y="250">Quadrilateral</tspan>
+        </text>
+    </svg>
+    <svg width="250", height="260">
+        <polygon points="125,30 240,100 200,230 50,230 10,100", style="fill:#ffc1ab; stroke:black; stroke-width:3"></polygon>
+        <text x="30" y="30">
+            <tspan x="80" y="250">Pentagon</tspan>
+        </text>
+    </svg>
+    <svg width="250", height="260">
+        <polygon points="125,30 230,80 230,180 125,230 20,180 20,80", style="fill:#84d7a6; stroke:black; stroke-width:3"></polygon>
+        <text x="30" y="30">
+            <tspan x="80" y="250">Hexagon</tspan>
+        </text>
+    </svg>
+    <br>
+    <svg width="300", height="200">
+        <rect x="0" y="0" style="width:300px; height:200px; fill:#009739"></rect>
+        <polygon points="150,20 280,100 150,180 20,100" style="fill:#FEDD00"></polygon>
+        <circle cx="150" cy="100" r="60" style="fill:#012169"></circle>
+        <circle cx="180" cy="130" r="1" fill="white"></circle>
+        <circle cx="190" cy="130" r="1" fill="white"></circle>
+        <circle cx="182" cy="134" r="1" fill="white"></circle>
+        <circle cx="175" cy="140" r="1" fill="white"></circle>
+        <circle cx="160" cy="125" r="1" fill="white"></circle>
+        <circle cx="170" cy="145" r="1" fill="white"></circle>
+        <circle cx="98" cy="110" r="1" fill="white"></circle>
+        <circle cx="95" cy="90" r="1" fill="white"></circle>
+        <circle cx="140" cy="145" r="1" fill="white"></circle>
+        <circle cx="95" cy="110" r="1" fill="white"></circle>
+        <circle cx="130" cy="130" r="1" fill="white"></circle>
+        <circle cx="102" cy="120" r="1" fill="white"></circle>
+        <path id="curve" d="M98,80 Q190,90 205,115" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"></path>
+        <text x="0" y="0" dy="4">
+            <textPath alignment-baseline="top" xlink:href="#curve" style="fill:green; font-size:10px">ORDEM E PROGRESSO</textPath>
+        </text>
+        <text x="10" y="190">My Flag</text>
+    </svg>
+    <img src="brazil-flag.webp" style="width:300px; height:200px">
+    <br>
+    <svg width="300", height="200">
+        <rect x="0" y="0" style="width:300px; height:66.66px; fill:black"></rect>
+        <rect x="0" y="66.66" style="width:300px; height:66.66px; fill:#DD0000"></rect>
+        <rect x="0" y="133.33" style="width:300px; height:66.66px; fill:#FFCC00"></rect>
+        <text x="10" y="190">My Flag</text>
+    </svg>
+    <img src="germany-flag.webp" style="width:300px; height:200px">
+</body>
+</html>

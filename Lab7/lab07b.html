@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7b</title>
+    <style>
+        body {
+                background-color: #5CDB95;
+                text-align: center;
+            }
+        label {
+            font-family: 'Lato';
+            font-size: 14px;
+            padding-left: 5px;
+            color: #EDF5E1;
+        }
+        input {
+            margin-left: 15px;
+        }
+        select {
+            margin-left: 15px;
+        }
+        .invalidSubmission {
+            font-size: 14px;
+            color: red;
+        }
+        form {
+            text-align: left;
+            width: 30%;
+            margin: 0 auto;
+            padding: 5px 0 8px 0;
+            border-radius: 5px;
+            background-color: #05386B;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-family: 'Lato';
+            text-align: center;
+            color: #05386B;
+        }
+        #submit {
+            background-color: #8EE4AF
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Registration</h1>
+    <form action="../cgi-bin/lab07b.cgi"  method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required placeholder="John Doe"><br>
+
+        <label for="street">Street Name:</label><br>
+        <input type="text" name="street" required placeholder="123 Street Rd"><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" name="city" required placeholder="Toronto"><br>
+
+        <label for="postalCode">Postal Code:</label><br>
+        <input type="text" name="postalCode" required placeholder="L5L 5L5"><br>
+
+        <label for="province">Province</label><br>
+        <select id="province" name="province" required>
+            <option value="" disabled selected>Select a province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+            <option value="YT">Yukon</option>
+        </select><br>
+
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="text" name="phoneNumber" required placeholder="1112223333"><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="text" name="email" required placeholder="example@gmail.com"><br>
+
+        <label for="picture">Picture</label><br>
+        <input type="file" name="picture" required><br><br>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10c</title>
+    <style>
+        body {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        div {
+            width: 50%;
+            text-align: left;
+            margin: 0 auto
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+        }
+
+        code {
+            background-color: rgb(205, 205, 205);
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Django</h1>
+        <h2>Installing the Framework</h2>
+        <p>Installing the framework was very simple. All I had to do was run 
+        the command <code>pip install Django==4.2.7</code> in the terminal to install the latest 
+        stable version of Django</p>
+    </div>
+    <div>
+        <h2>Building This Page</h2>
+        <p>To get started, I had to create a new Django project.</p>
+        <p>I first entered a directy where I want to store the application, then ran <code>django-admin startproject lab10c</code> in the terminal.</p>
+        <p>Then, I had to edit the <strong>lab10/urls.py</strong> file to link it to my views file. 
+            The <strong>lab10c/urls.py</strong> also had to be edited to include a path to the <strong>lab10/urls.py</strong> file.</p>
+        <p>The next step was to create an HTML file so I could actually edit my webpage properly. I did this by creating a new 
+            folder called <strong>templates</strong> and placing a <strong>lab10c.html</strong> file inside that folder.</p>
+        <p>I then had to edit the <strong>views.py</strong> file to render the HTML code. After that, I added the <strong>lab10</strong>
+        folder to the INSTALLED_APPS array in the <strong>settings.py</strong> file.</p>
+        <p>Finally, I ran <code>py manage.py migrate</code> and the server was up and running!</p>
+    </div>
+    <div>
+        <h2>Difficulties Encountered</h2>
+        <p>The only difficulties I encountered were the ones when I was trying to set up the project. After that, everything was a breeze.
+            To combat this, I was just following a few different tutorials, trying to piece together what I actually needed. A specific 
+            problem I had was that my website was not being displayed, but one of the tutorials told me not to just use the IP given when 
+            the server starts, but include <code>/project_name</code> at the end of the URL.
+        </p>
+    </div>
+</body>
+</html>

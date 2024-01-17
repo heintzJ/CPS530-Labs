@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <script src="lab04.js"></script>
+    <style>
+        #formResult{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 24px;
+            color: blue;
+            display: flex;
+        }
+        .forms{
+            display: flex;
+            margin: 5px;
+        }
+        .countCharsInput{
+            display: flex;
+            margin: 5px;
+        }
+        p {
+            display: flex;
+            margin: 5px
+        }
+        #security-yt{
+            background-color: green;
+        }
+        #security-cern{
+            background-color: red;
+        }
+    </style>
+</head>
+<body onload="showSecurity()">
+    <section class="forms">
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" id="address"><br>
+        <label for="pnumber">Phone number (555) 555-5555:</label><br>
+        <input type="text" name="pnumber" id="pnumber"><br><br>
+        <input type="button" value="Submit" onclick="return formValidator()">
+    </form>
+    </section>
+    <p id="formResult"></p>
+    <section class="countCharsInput">
+        <textarea id="countCharacters" name="countCharacters" rows="4" cols="50" oninput="charCount(); countLetters()"></textarea>
+        <p>Character count: <span id="characterCount">0</span></p>
+        <br>
+        <p>Letter count: <span id="letterCount">0</span></p>
+    </section>
+    <section>
+        <a href="https://www.youtube.com/" id="Youtube"></a><span id="security-yt"></span>
+        <br>
+        <a href="http://info.cern.ch" id="CERN"></a><span id="security-cern"></span>
+    </section>
+</body>
+</html>

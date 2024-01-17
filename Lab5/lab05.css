@@ -1,0 +1,45 @@
+.draggable:hover {
+    cursor: pointer;
+}
+
+#fullscreen {
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+}
+
+#revert{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+}
+
+#game {
+    background-color: white;
+    border-radius: 10px;
+    height: 23vw;
+    overflow: auto;
+}
+
+#body {
+    width: 18%;
+    margin: 2vw;
+}
+
+#hat {
+    width: 18%;
+}
+
+#eyes {
+    width: 10%;
+}
+
+#nose {
+    width: 6%;
+}
+
+#mouth {
+    width: 13%;
+}

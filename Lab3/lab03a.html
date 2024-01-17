@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    <style>
+        /* for mobile */
+        [class*="col-"] {
+            width: 85%;
+        }
+        /* for tablet */
+        @media only screen and (min-width: 768px) { 
+            .col-1 {width: 16.67%;}
+            .col-2 {width: 33.33%;}
+            .col-3 {width: 50%;}
+            .col-4 {width: 66.66%;}
+            .col-5 {width: 83.33%;}
+            .col-6 {width: 100%;}
+        }
+        /* for desktop */
+        @media only screen and (min-width: 1024px) { 
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        [class*="col-"] {
+            float:left;
+        }
+        .row::after {
+            content:"";
+            clear:both;
+            display:table;
+        }
+        body {
+            background-image: url("kuala-lumpur-background.jpg");
+            background-position: center 35%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        details {
+            border: 2px solid grey;
+            border-radius: 10px;
+            background-color: white;
+            padding: 5px;
+            margin: 1vw;
+        }
+        summary {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            background-color: white;
+            border-radius: 10px;
+            display: table;
+            padding: 5px;
+            margin: 0 auto;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            margin: 1vw;
+        }
+        p {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            display: table;
+            padding: 5px;
+        }
+        img {
+            max-width: 100%;
+        }
+        aside {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.428;
+            text-align: left;
+            background-color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            display: table;
+            padding: 5px;
+            margin: 1vw;
+        }
+        #image-in-details {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-4">
+            <h1 class="header">Kuala Lumpur</h1>
+        </div>
+    </div>
+    <article class="row">
+        <section class="col-4">
+            <details>
+                <summary>Where is Kuala Lumpur?</summary>
+                <p>Kuala Lumpur is the capital of Malaysia on the west-central Peninsula.</p>
+                <section>
+                    <a id="image-in-details" href="https://www.britannica.com/place/Kuala-Lumpur">
+                        <img src="World-Data-Locator-Map-Malaysia.webp">
+                    </a>
+                </section>
+            </details>
+            <details>
+                <summary>Population</summary>
+                <p>The population of Kuala Lumur is 8 662 000, making it the 46th largest city in the world.</p>
+            </details>
+            <details>
+                <summary>Petronas Twin Towers</h3></summary>
+                <p>The Petronas Twin Towers (right) are the tallest twin skyscrapers in the world. Construction started in
+                    1993 and the buildings were completed in 1996. The 88 storey buildings stand at 451.9 meters tall and were 
+                    the tallest buildings in the world until 2004. They were also the tallest buildings in Malaysia until 2019, 
+                    with the completion of The Exchange 106.
+                </p>
+            </details>
+        </section>
+        <section class="col-4">
+            <a href="https://www.britannica.com/place/Kuala-Lumpur">
+                <img src="Kuala-Lumpur-Malaysia.webp">
+            </a>
+        </section>
+        <section class="col-4">
+            <h3 class="header">History</h3>
+            <aside>Kuala Lumur was founded in 1857, by a group of Chinese tin miners. They founded a settlement at what is now known as
+                the suburb of Ampang. The community flourished, and in 1880, it became the state capital, taking the position
+                from Klang. The growth after is largely attributed to Sir Frank Swettenham, a British resident. He initiated
+                construction of the Klang-Kuala Lumur Railway and encouraged the use of brick and tile in buildings. The city
+                became the capital of the Federated Malay States in 1895.
+                <br>
+                The city was under Japan occupation during World War II, and was under a communist-led insurgency during 1948-1960.
+                The Federated Malay States became the Federation of Malaya in 1957, and then just Malaysia in 1963. It was and is the
+                capital of both of countries.
+            </aside>
+        </section>
+    </article>
+</body>
+</html>

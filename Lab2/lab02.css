@@ -1,0 +1,110 @@
+h1 {
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+h2 {
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+img {
+    margin: 5px;
+    width: 200px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+img:hover{
+    filter: invert(100%);
+}
+body {
+    background-image: url("trees-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.interest-content-box{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px auto;
+    padding: 5px;
+    width: 70%;
+    background-color: #219ebc;
+    border-radius: 25px;
+    display: table;
+    position: relative;
+    z-index: 1;
+}
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    display: table;
+    border: 2px;
+    margin: 15px;
+    word-wrap: break-word;
+    position:relative;
+    width: auto;
+    z-index: 3;
+}
+#main-headers{
+    display: table;
+    margin: 0 auto;
+    background-color: #219ebc;
+    border-radius: 25px;
+    display: table;
+    position: relative;
+    z-index: 1;
+    width: auto;
+}
+#interest-headers-left{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: #8ecae6;
+    border-radius: 20px;
+    display: table;
+    width: 48%;
+    float: left;
+    margin-top: 18px;
+    margin-left: 12px;
+    margin-right: 9px;
+    margin-bottom: 18px;
+    z-index: 2;
+}
+#interest-headers-right{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: #8ecae6;
+    border-radius: 20px;
+    display: table;
+    width: 48%;
+    float: right;
+    margin-top: 18px;
+    margin-left: 9px;
+    margin-right: 12px;
+    margin-bottom: 18px;
+    z-index: 2;
+}
+#interest-header-center{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: #8ecae6;
+    border-radius: 25px;
+    display: table;
+    margin-top: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 18px;
+    z-index: 2;
+}
+#skiing-caption{
+    font-size: 10px; 
+    position:relative;
+    margin: 5px;
+    visibility: visible;
+}
